@@ -1,31 +1,22 @@
-<!-- templates/home.html -->
-
 {% extends "base.html" %}
-
 {% block title %}Home{% endblock %}
-
 {% block content %}
 <div class="container">
     <h1>Welcome, {{ current_user.username }}!</h1>
     <div class="upload-section">
-        <h2>Upload Your Facial Image</h2>
+        <h2>Upload Your Skin Image</h2>
         <form method="POST" enctype="multipart/form-data">
             <input type="file" name="file" accept="image/*" required>
             <button type="submit">Upload and Analyze</button>
         </form>
     </div>
     
-    {% if products %}
-    <div class="products-section">
-        <h2>Recommended Products</h2>
-        <ul class="product-list">
-            {% for product in products %}
-            <li class="product-item">
-                <h3>{{ product.name }}</h3>
-                <p>{{ product.description }}</p>
-            </li>
-            {% endfor %}
-        </ul>
+    {% if skin_condition %}
+    <div class="results-section">
+        <h2>Analysis Results</h2>
+        <p>Detected skin condition: {{ skin_condition }}</p>
+        <h3>Recommended Products:</h3>
+        <p>{{ recommendations }}</p>
     </div>
     {% endif %}
 </div>

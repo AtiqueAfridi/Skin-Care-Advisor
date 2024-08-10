@@ -1,0 +1,10 @@
+<!-- templates/results.html -->
+{% extends "base.html" %}
+
+{% block content %}
+  <h2>Results</h2>
+  <p>Skin Condition Detected: <strong>{{ condition }}</strong></p>
+  <h3>Recommended Products:</h3>
+  <p>{{ products }}</p>
+  <a href="{{ url_for('upload_image') }}">Upload another image</a>
+{% endblock %}
