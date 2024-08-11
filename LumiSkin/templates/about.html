@@ -6,22 +6,62 @@
 
 {% block content %}
 <div class="container">
-    <h1>About Us</h1>
-    <p>We are a team of passionate developers and skincare enthusiasts dedicated to helping people find the best products for their skin.</p>
-    <h2>Our Team</h2>
-    <ul class="team-list">
-        <li>
-            <h3>John Doe</h3>
-            <p>Lead Developer</p>
-        </li>
-        <li>
-            <h3>Jane Smith</h3>
-            <p>AI Specialist</p>
-        </li>
-        <li>
-            <h3>Mike Johnson</h3>
-            <p>UI/UX Designer</p>
-        </li>
-    </ul>
+    <h1 class="text-center">About Us</h1>
+    <p class="text-center">We are a team of passionate developers and skincare enthusiasts dedicated to helping people find the best products for their skin.</p>
+    
+    <h2 class="text-center">Our Team</h2>
+    <div class="team-tree">
+        <div class="team-lead">
+            <img src="{{ url_for('static', filename='images/atique_abdullah.jpeg') }}" alt="Atique Abdullah">
+            <h3>Atique Abdullah</h3>
+	    <p>Team Lead</p>
+            <a href="https://www.linkedin.com/in/atique-abdullah/" target="_blank">LinkedIn</a> |
+            <a href="mailto:atiqueafridi10@gmail.com">Email</a>
+        </div>
+        <div class="team-members">
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/faizan_shah.jpeg') }}" alt="S. Faizan Shah">
+                <h3>S. Faizan Shah</h3>
+                <a href="https://www.linkedin.com/in/faizan-shah" target="_blank">LinkedIn</a> |
+                <a href="mailto:faizan.shah@example.com">Email</a>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/ali_raza.jpeg') }}" alt="S. Ali Raza Naqvi">
+                <h3>S. Ali Raza Naqvi</h3>
+                <a href="https://www.linkedin.com/in/ali-raza-naqvi" target="_blank">LinkedIn</a> |
+                <a href="mailto:ali.raza@example.com">Email</a>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/zehra_sharifi.jpeg') }}" alt="Zehra Sharifi">
+                <h3>Zehra Sharifi</h3>
+                <a href="https://www.linkedin.com/in/zehra-sharifi" target="_blank">LinkedIn</a> |
+                <a href="mailto:zehra.sharifi@example.com">Email</a>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/muhammad_kaif.jpeg') }}" alt="Muhammad Kaif">
+                <h3>Muhammad Kaif</h3>
+                <a href="https://www.linkedin.com/in/muhammad-kaif" target="_blank">LinkedIn</a> |
+                <a href="mailto:muhammad.kaif@example.com">Email</a>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/hmael_asif.jpeg') }}" alt="Hmael Asif">
+                <h3>Hmael Asif</h3>
+                <a href="https://www.linkedin.com/in/hmael-asif" target="_blank">LinkedIn</a> |
+                <a href="mailto:hmael.asif@example.com">Email</a>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/abdul_mubeen.jpeg') }}" alt="Abdul Mubeen">
+                <h3>Abdul Mubeen</h3>
+                <a href="https://www.linkedin.com/in/abdul-mubeen" target="_blank">LinkedIn</a> |
+                <a href="mailto:abdul.mubeen@example.com">Email</a>
+            </div>
+            <div class="member">
+                <img src="{{ url_for('static', filename='images/anees_khan.jpeg') }}" alt="Anees Khan">
+                <h3>Anees Khan</h3>
+                <a href="https://www.linkedin.com/in/anees-khan" target="_blank">LinkedIn</a> |
+                <a href="mailto:anees.khan@example.com">Email</a>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
